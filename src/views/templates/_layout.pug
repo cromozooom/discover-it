@@ -1,0 +1,41 @@
+block vars
+	- pageName = "home" + "Page"
+	
+doctype html
+html(lang="en" dir="ltr" ng-app="portfolio" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml")
+	
+	include ../includes/_head
+	
+	body#pin(class= pageName)
+		include ../includes/_nav
+		block content
+			p sample	
+		block scripts
+			//- jQuery
+			script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+			//- script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
+			//- script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
+			//- script(src="/javascripts/anim.js")
+			//-Start of Async Drift Code
+	//- chat
+	//- script.
+		!function() {
+		var t;
+		if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+		t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+		t.factory = function(e) {
+		return function() {
+		var n;
+		return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+		};
+		}, t.methods.forEach(function(e) {
+		t[e] = t.factory(e);
+		}), t.load = function(t) {
+		var e, n, o, i;
+		e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+		o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+		n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+		});
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('vkde3s42tims');

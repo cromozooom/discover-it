@@ -1,0 +1,70 @@
+mixin icon(icoType, link)
+	if icoType == "more"
+		a.icon.more(href= link)
+			svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 80 80', style='enable-background:new 0 0 80 80;', xml:space='preserve')
+				circle.bgIcon(cx='40', cy='40', r='39.5')
+				line.cross(x1='40', y1='19', x2='40', y2='61')
+				line.cross(x1='61', y1='40', x2='19', y2='40')
+	if icoType == "menu"
+		a.icon.menu(href= link)
+			svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 80 80', style='enable-background:new 0 0 80 80;', xml:space='preserve')
+				line.menuIcon(x1='66', y1='46.7', x2='14', y2='46.7')
+				line.menuIcon(x1='66', y1='33.3', x2='14', y2='33.3')
+				line.menuIcon(x1='66', y1='20', x2='14', y2='20')
+				line.menuIcon(x1='66', y1='60', x2='14', y2='60')
+
+mixin card(side, myclass, img, title, content )
+	//-
+		.card.card--my.w-50.d-flex
+			.content.d-flex.align-items-stretch.flex-row(class= myclass)
+				a.icon(href="#") more
+				.w-50.copy
+					h3= title
+					p= content
+			
+
+	//- 
+	if side == "l"
+		.card.card--my.d-flex(class= myclass)
+			.content.align-items-stretch
+				+icon("menu", "http://www.solopx.com")
+				+icon("more", "http://www.solopx.com")
+				.w-50.copy.mr-auto.h-100
+					h3= title
+					p= content
+	if side == "l75"
+		.card.card--my.d-flex(class= myclass)
+			.content.align-items-stretch
+				+icon("menu", "http://www.solopx.com")
+				+icon("more", "http://www.solopx.com")
+				.w-75.copy.mr-auto.h-100
+					h3.w-75= title
+					p.w-75= content
+			
+	if side == "r"
+		.card.card--my.d-flex(class= myclass)
+			.content.align-items-stretch
+				+icon("menu", "http://www.solopx.com")
+				+icon("more", "http://www.solopx.com")
+				.w-50.copy.ml-auto.h-100
+					h3= title
+					p= content
+	
+			
+	if side == "t"
+		.card.card--my.d-flex.align-items-stretch(class= myclass)
+			.content
+				+icon("menu", "http://www.solopx.com")
+				+icon("more", "http://www.solopx.com")
+				.w-100.copy.d-flex
+					h3= title
+					p.px-4= content
+.container-fluid.m-0.px-0
+	.mx-0.px-0
+		.cards.d-flex.flex-wrap.align-items-stretch
+			+card( "r", "about", "01", "ABOUT US", "our mission is quiet simple, to make web a high value assets for your bussiness and to provide seamles integration with your bussiness system proces")
+			+card( "l", "services", "02", "SERVICES", "We develop web Application for clients in any business sector")
+			+card( "r", "team", "03", "THE TEAM", "Eclectic, passionate, talented, humble...")
+			+card( "l75", "contact", "04", "CONTACT", "To make web a high value assets for your bussiness and to provide seamles integration with your bussiness system proces")
+			+card( "l75", "work", "05", "WORK", "Discover IT is Berkshire-base Web application development company specialising in design and implementing effective Web based business applications and E-Commerce solutions")
+			+card( "t", "support", "06", "SUPPORT", "Discover IT uses alert software wich detects when a server may be malfunctioning.")

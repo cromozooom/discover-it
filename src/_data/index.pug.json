@@ -1,0 +1,186 @@
+{
+  "head": {
+    "language" : "en",
+    "title": "",
+    "metaDescription": "",
+    "metaRevised": "Thursday, January 26th, 2017, 10:56 pm",
+    "metaRating": "General",
+    "metaRevisit-after": "7 days",
+    "metaUrl": "http://solopx.com/",
+    "metaIdentifier-URL": "http://solopx.com/",
+    "linkIndex": {
+      "href": "http://solopx.com/",
+      "title": "solopx - Razvan Nicu - UX/UI/Graphic Designer - sometimes developer"
+    },
+    "linkCanonical": "http://solopx.com/",
+    "social": {
+      "twitter": {
+        "meta": "meta(name='twitter:card' content='summary_large_image')",
+        "meta": "meta(name='twitter:site' content='@cromozooom')",
+        "meta": "meta(name='twitter:creator' content='@cromozooom')",
+        "meta": "meta(name='twitter:title' content='solopx')",
+        "meta": "meta(name='twitter:description' content='Nicu Razvan is a web designer from London, specializing in UX/UI design & front end web development.')",
+        "meta": "meta(name='twitter:image' content='http://www.solopx.com/images/razvan_nicu.png')"
+      },
+      "google": {
+        "meta": "meta(itemprop='description' content='Nicu Razvan is a web designer from London, specializing in UX/UI design & front end web development.')"
+      }
+    }
+  },
+  "projects": {
+    "project01": {
+      "id": 1,
+      "title": "Bufnita din tei",
+      "projectNameEscape": "bufnita-din-tei",
+      "description": "A private school of arts that break the barriers of knowledge",
+      "bg": true,
+      "activitys": [
+        "project management",
+        "brand identity",
+        "UX/UI & developement"
+      ],
+      "links": {
+        "link1": {
+          "title": "website",
+          "link": "http://bufnitadintei.ro/"
+        },
+        "link2": {
+          "title": "brand identity",
+          "link": "http://www.slideshare.net/cromozooom/owl-from-the-linden-53764876"
+        }
+      },
+      "anim": {
+        "images": {
+          "image03": {
+            "id": 3,
+            "title": "img3.png",
+            "description": "logo Bufnita din tei"
+          },
+          "image02": {
+            "id": 2,
+            "title": "img2.png",
+            "description": "home page - desktop view for Bufnita din tei"
+          },
+          "image01": {
+            "id": 1,
+            "title": "img1.png",
+            "description": "home page - mobile view responsive for Bufnita din tei"
+          }
+        }
+      },
+      "centralContent": {
+        "description": "It was a pleasure to play with the colors and basic shapes",
+        "image01": {
+          "id": 1,
+          "title": "img1_center.png",
+          "description": "sample vector icons for Bufnita din tei"
+        }
+        
+      }
+    },
+    
+    "project02": {
+      "id": 2,
+      "title": "Responsive email",
+      "projectNameEscape": "responsive-email",
+      "description": "Top SPEED workflow with PUG.",
+      "bg": true,
+      "activitys": [
+        "project management",
+        "UX/UI & developement"
+      ],
+      "links": {
+        "link1": {
+          "title": "SAMPLE NEWSLETTER",
+          "link": "https://rawgit.com/cromozooom/responsive-email/master/dev/index_f4u.html"
+        },
+        "link2": {
+          "title": "gitHub",
+          "link": "https://rawgit.com/cromozooom/responsive-email/master/dev/index_f4u.html"
+        }
+      },
+      "anim": {
+        "images": {
+          "image01": {
+            "id": 1,
+            "title": "img1.png",
+            "description": "hero image promotion newsletter sample"
+          },
+          "image02": {
+            "id": 2,
+            "title": "img2.png",
+            "description": "promotional left small banner"
+          },
+          "image03": {
+            "id": 3,
+            "title": "img3.png",
+            "description": "promotional right small banner"
+          },
+          "image04": {
+            "id": 4,
+            "title": "img4.png",
+            "description": "newsletter product thumbnail sample row"
+          },
+          "image05": {
+            "id": 5,
+            "title": "img5.png",
+            "description": "brand sample row: nike, adidas, puma, joma, asics umbro ..."
+          },
+          "image06": {
+            "id": 6,
+            "title": "img6.png",
+            "description": "sample of header with logo and social network icons"
+          }
+        }
+      }
+    },
+    "project03": {
+      "id": 3,
+      "title": "GoIn App",
+      "projectNameEscape": "goIn",
+      "description": "My side project, is a mobile ticketing solution extending businesses on smartphones.",
+      "bg": true,
+      "activitys": [
+        "UX/UI & developement",
+        "brand identity"
+      ],
+      "links": {
+        "link1": {
+          "title": "website",
+          "link": "http://goin.mobi/"
+        },
+        "link2": {
+          "title": "app Soon ...",
+          "link": "#"
+        }
+      },
+      "anim": {
+        "images": {
+          "image01": {
+            "id": 1,
+            "title": "img1.png",
+            "description": "share tickets from your account"
+          },
+          "image02": {
+            "id": 2,
+            "title": "img2.png",
+            "description": "tickets available on GOiN "
+          },
+          "image03": {
+            "id": 3,
+            "title": "img3.png",
+            "description": "login screenshoot"
+          }
+        }
+      },
+      "centralContent": {
+        "description": "It was a pleasure to play with the colors and basic shapes",
+        "image01": {
+          "id": 1,
+          "title": "img1_center.png",
+          "description": "sample vector icons for Bufnita din tei"
+        }
+      }
+    }
+  }
+}
