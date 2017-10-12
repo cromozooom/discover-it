@@ -14,16 +14,6 @@ mixin icon(icoType, link)
 				line.menuIcon(x1='66', y1='60', x2='14', y2='60')
 
 mixin card(side, myclass, img, title, content )
-	//-
-		.card.card--my.w-50.d-flex
-			.content.d-flex.align-items-stretch.flex-row(class= myclass)
-				a.icon(href="#") more
-				.w-50.copy
-					h3= title
-					p= content
-			
-
-	//- 
 	if side == "l"
 		.card.card--my.d-flex(class= myclass)
 			.content.align-items-stretch
@@ -40,7 +30,7 @@ mixin card(side, myclass, img, title, content )
 				.w-75.copy.mr-auto.h-100
 					h3.w-75= title
 					p.w-75= content
-			
+
 	if side == "r"
 		.card.card--my.d-flex(class= myclass)
 			.content.align-items-stretch
@@ -49,8 +39,7 @@ mixin card(side, myclass, img, title, content )
 				.w-50.copy.ml-auto.h-100
 					h3= title
 					p= content
-	
-			
+
 	if side == "t"
 		.card.card--my.d-flex.align-items-stretch(class= myclass)
 			.content

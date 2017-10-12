@@ -13,10 +13,28 @@ html(lang="en" dir="ltr" ng-app="portfolio" xmlns:og="http://ogp.me/ns#" xmlns:f
 		block scripts
 			//- jQuery
 			script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+			script(src="javascripts/classie.js")
 			//- script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
 			//- script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
 			//- script(src="/javascripts/anim.js")
 			//-Start of Async Drift Code
+	script.
+		function init() {
+			window.addEventListener('scroll', function(e){
+				var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+					shrinkOn = 100,
+					nav = document.querySelector("nav");
+				if (distanceY > shrinkOn) {
+					classie.add(nav,"smaller");
+				} else {
+					if (classie.has(nav,"smaller")) {
+						classie.remove(nav,"smaller");
+					}
+				}
+			});
+		}
+		window.onload = init();
+
 	//- chat
 	//- script.
 		!function() {
