@@ -22,7 +22,7 @@ html(lang="en" dir="ltr" ng-app="portfolio" xmlns:og="http://ogp.me/ns#" xmlns:f
 		function init() {
 			window.addEventListener('scroll', function(e){
 				var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-					shrinkOn = 100,
+					shrinkOn = 200,
 					nav = document.querySelector("nav");
 				if (distanceY > shrinkOn) {
 					classie.add(nav,"smaller");
