@@ -125,8 +125,8 @@
   height: 1.5em;
   vertical-align: middle;
   content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
+  //background: no-repeat center center;
+  //background-size: 100% 100%;
 }
 
 // Generate series of `.navbar-expand-*` responsive classes for configuring
@@ -230,7 +230,7 @@
   }
 
   .navbar-toggler-icon {
-    background-image: $navbar-light-toggler-icon-bg;
+    //background-image: $navbar-light-toggler-icon-bg;
   }
 
   .navbar-text {
@@ -275,7 +275,7 @@
   }
 
   .navbar-toggler-icon {
-    background-image: $navbar-dark-toggler-icon-bg;
+    //background-image: $navbar-dark-toggler-icon-bg;
   }
 
   .navbar-text {

@@ -1,9 +1,36 @@
 footer.container-fluid.footer
-	
-
-block scripts
-	//- jQuery
-	script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
-	script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
-	script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
-	script(src="/javascripts/anim.js")
+	.container-footer.p-4.m-o.d-flex.flex-wrap
+		.about.d-flex.flex-column
+			.about-company
+				include logo
+				p.pr-4.mt-4
+					| Discover IT (UK) limited
+					| 123 Fleetham Gardens
+					br
+					| Lower Earley
+					| Reading
+					| RG6 $BZ
+			.about-social
+				ul.list-unstyled.list-inline
+					li.list-inline-item.mr-3.faceBook: a(href="http://www.solopx.com")
+						+more
+					li.list-inline-item.mr-3.twitter: a(href="http://www.solopx.com")
+						+more
+					li.list-inline-item.mr-3.linkedIn: a(href="http://www.solopx.com")
+						+more
+					li.list-inline-item.mr-3.instagram: a(href="http://www.solopx.com")
+						+more
+		.form.d-flex.flex-column
+			h5: strong GET IN TOUCH
+			form
+				.form-group
+					//- label(for='exampleInputEmail1') Email address
+					input#exampleInputEmail1.form-control(type='name', aria-describedby='nameHelp', placeholder='Name')
+				.form-group
+					//- label(for='exampleInputEmail1') Email address
+					input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Email')
+					small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+				.form-group
+					//- label(for='exampleFormControlTextarea1') Example textarea
+					textarea#exampleFormControlTextarea1.form-control(rows='3')
+				button.btn.btn-primary(type='submit') SEND

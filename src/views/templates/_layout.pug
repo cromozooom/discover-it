@@ -1,3 +1,4 @@
+include ../includes/ico/icons
 block vars
 	- pageName = "home" + "Page"
 	
@@ -9,7 +10,8 @@ html(lang="en" dir="ltr" ng-app="portfolio" xmlns:og="http://ogp.me/ns#" xmlns:f
 	body#pin(class= pageName)
 		include ../includes/_nav
 		block content
-			p sample	
+			p sample
+		include ../includes/_footer
 		block scripts
 			//- jQuery
 			script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")

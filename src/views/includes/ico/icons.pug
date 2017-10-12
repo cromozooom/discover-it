@@ -1,0 +1,22 @@
+mixin more
+	svg.svg_more(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 80 80', style='enable-background:new 0 0 80 80;', xml:space='preserve')
+		circle.bgIcon(cx='40', cy='40', r='39.5')
+		line.cross(x1='40', y1='19', x2='40', y2='61')
+		line.cross(x1='61', y1='40', x2='19', y2='40')
+mixin menu
+	svg.svg_menu(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 80 80', style='enable-background:new 0 0 80 80;', xml:space='preserve')
+		line.menuIcon(x1='66', y1='46.7', x2='14', y2='46.7')
+		line.menuIcon(x1='66', y1='33.3', x2='14', y2='33.3')
+		line.menuIcon(x1='66', y1='20', x2='14', y2='20')
+		line.menuIcon(x1='66', y1='60', x2='14', y2='60')
+
+
+
+mixin icon(icoType, link)
+	if icoType == "more"
+		a.icon.more(href= link)
+			+more
+	if icoType == "menu"
+		a.icon.menu(href= link)
+			+menu
+			
