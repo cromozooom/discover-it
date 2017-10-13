@@ -1,11 +1,31 @@
-nav.navbar.navbar-expand-lg.navbar-light.navbar-toggleable-md.navbar-inverse.fixed-top(style="background-color: transparent;")
+//nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+		span.navbar-toggler-icon
+			+menu
+	a.navbar-brand(href='http://www.solopx.com')
+		include logo
+	.navbar-collapse.collapse
+		ul.navbar-nav.mr-auto.text-right
+			li.nav-item
+				a.nav-link(href="#") menu 1
+			li.nav-item
+				a.nav-link(href="#") menu 1
+			li.nav-item
+				a.nav-link(href="#") menu 1
+			li.nav-item
+				a.nav-link(href="#") menu 1
+			
+
+
+nav.navbar.navbar-expand-lg.navbar-light.navbar-toggleable-md.navbar-inverse.sticky-top(style="background-color: transparent;")
+	//-.container.w-100
 	a.navbar-brand(href='http://www.solopx.com')
 		include logo
 	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
 		span.navbar-toggler-icon
 			+menu
 	#navbarSupportedContent.collapse.navbar-collapse
-		ul.navbar-nav.ml-auto
+		ul.navbar-nav.ml-auto.text-center
 			li.nav-item.px-2
 				a.nav-link(href='http://www.solopx.com')
 					| WHAT WE DO 
