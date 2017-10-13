@@ -1,64 +1,36 @@
+$mobileIconSize: 40px
 .navbar
-	padding: 2rem 2rem 0rem 2rem
-	max-width: 100vw
-
-	position: fixed
-	top: 0
-	right: 0
-	left: 0
-	z-index: 1030
-nav
+	padding-top: 2rem
 	font-family: $font-family-sans-serif
 	font-weight: 800
-	svg
-		height: 35px
-		//width: 158px
-		&.svg_menu
-			height: 40px
-.navbar-toggler
-	padding: 0
-	margin: -20px 5px 0 0
-	border: none
-
-//*
-//	transition: all .2s ease-out
-
-//.navbar
-//	transition: all .2s ease-out
-
-.navbar-collapse.show
-	background: $blue
-	.navbar-nav
-		//text-align: center
-	.nav-link
-		padding: 1rem
-	.navbar-nav .nav-link
-		color: white
-
-.smaller
-	background: darken($colo2, 90%) !important
-	.navbar-collapse.show
-		background: black
-	&.navbar
-		padding: 1rem 2rem 0rem 2rem
-		a
-			color: white !important
-		.logo0
-			fill: white
-
-
-
-// @include media-breakpoint-up(xs)
-// @include media-breakpoint-up(sm)
-@include media-breakpoint-up(md)
-	//.navbar
-	//	padding: 2rem 2rem 0rem 2rem
-	nav
+	.navbar-toggler
+		border: none
+		width: $mobileIconSize
+		height: $mobileIconSize
+		margin: -0.3rem 1rem 0 0
 		svg
-			height: 50px
-			width: 200px
-			&.svg_menu
-				height: 40px
-				width: 40px
-//@include media-breakpoint-up(lg)
-// @include media-breakpoint-up(xl)
+			width: $mobileIconSize
+			height: $mobileIconSize
+	*
+		transition: all .2s ease-out
+	.navbar-collapse[aria-expanded="true"]
+		background: white
+		a
+			padding-left: .5rem
+	svg.logo
+		margin-left: 1rem
+		height: $mobileIconSize
+		width: 158px
+	a
+		color: black
+.smaller.navbar
+	background: darken($colo2, 90%) !important
+	color: white
+	a
+		color: white
+	.logo0
+		fill: white
+	.menuIcon
+		stroke: $white
+	.navbar-collapse[aria-expanded="true"]
+		background: black

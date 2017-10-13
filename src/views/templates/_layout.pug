@@ -10,7 +10,6 @@ html(lang="en" dir="ltr" ng-app="portfolio" xmlns:og="http://ogp.me/ns#" xmlns:f
 	body#pin(class= pageName)
 		include ../includes/_nav
 		block content
-			p sample
 		include ../includes/_footer
 		block scripts
 			//- jQuery
@@ -22,22 +21,23 @@ html(lang="en" dir="ltr" ng-app="portfolio" xmlns:og="http://ogp.me/ns#" xmlns:f
 			//- script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
 			//- script(src="/javascripts/anim.js")
 			//-Start of Async Drift Code
-	script.
-		function init() {
-			window.addEventListener('scroll', function(e){
-				var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-					shrinkOn = 200,
-					nav = document.querySelector("nav");
-				if (distanceY > shrinkOn) {
-					classie.add(nav,"smaller");
-				} else {
-					if (classie.has(nav,"smaller")) {
-						classie.remove(nav,"smaller");
+	menu change color on scroll
+		script.
+			function init() {
+				window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+						shrinkOn = 200,
+						nav = document.querySelector("nav");
+					if (distanceY > shrinkOn) {
+						classie.add(nav,"smaller");
+					} else {
+						if (classie.has(nav,"smaller")) {
+							classie.remove(nav,"smaller");
+						}
 					}
-				}
-			});
-		}
-		window.onload = init();
+				});
+			}
+			window.onload = init();
 
 	//- chat
 	//- script.

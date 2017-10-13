@@ -1,38 +1,19 @@
-//nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
-	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-		span.navbar-toggler-icon
-			+menu
-	a.navbar-brand(href='http://www.solopx.com')
+nav.navbar.navbar-expand-md.fixed-top.pb-0(style="background-color: transparent;")
+	a.navbar-brand.p-0(href='http://www.solopx.com')
 		include logo
-	.navbar-collapse.collapse
-		ul.navbar-nav.mr-auto.text-right
-			li.nav-item
-				a.nav-link(href="#") menu 1
-			li.nav-item
-				a.nav-link(href="#") menu 1
-			li.nav-item
-				a.nav-link(href="#") menu 1
-			li.nav-item
-				a.nav-link(href="#") menu 1
-			
-
-
-nav.navbar.navbar-expand-lg.navbar-light.navbar-toggleable-md.navbar-inverse.sticky-top(style="background-color: transparent;")
-	//-.container.w-100
-	a.navbar-brand(href='http://www.solopx.com')
-		include logo
-	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-		span.navbar-toggler-icon
-			+menu
-	#navbarSupportedContent.collapse.navbar-collapse
-		ul.navbar-nav.ml-auto.text-center
-			li.nav-item.px-2
-				a.nav-link(href='http://www.solopx.com')
+	button.navbar-toggler.p-0(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+		//- span.navbar-toggler-icon
+		+menu
+	#navbarCollapse.collapse.navbar-collapse
+		ul.navbar-nav.ml-auto.p-0
+			li.nav-item.active
+				a.nav-link.py-3(href='http://www.solopx.com')
 					| WHAT WE DO 
-					span.sr-only (current)
-			li.nav-item.px-2
-				a.nav-link(href='http://www.solopx.com') WORK
-			li.nav-item.px-2
-				a.nav-link(href='http://www.solopx.com') NEWS & BLOG
-			li.nav-item.px-2
-				a.nav-link(href='http://www.solopx.com') CONTACT
+					// span.sr-only (current)
+			li.nav-item
+				a.nav-link.py-3(href='http://www.solopx.com') WORK
+			li.nav-item
+				a.nav-link.py-3(href='http://www.solopx.com') NEWS & BLOG
+			li.nav-item
+				a.nav-link.py-3(href='http://www.solopx.com') CONTACT
+
